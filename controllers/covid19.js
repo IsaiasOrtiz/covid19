@@ -10,7 +10,7 @@ function reqListener () {
       //
     //}
     for(var elemento in array_datos){
-        tarjetas = tarjetas + tarjeta(elemento,"Casos confirmados: "+array_datos[elemento].All.confirmed, "C:/Users/Isaias/Desktop/PruebaTecnica/assets/img/covid.png", array_datos[elemento].All.location, array_datos[elemento]);
+        tarjetas = tarjetas + tarjeta(elemento,"Casos confirmados: "+array_datos[elemento].All.confirmed, "./assets/img/covid.png", array_datos[elemento].All.location, array_datos[elemento]);
         //console.log(array_datos[elemento].All.confirmed);
     }
     document.getElementById("contenido").innerHTML = tarjetas;
